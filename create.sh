@@ -1,3 +1,3 @@
 cd C:/Users/RITU/temp
-rm -rf*
+rm -rf *
 touch xyz.txt
