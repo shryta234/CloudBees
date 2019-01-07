@@ -1,0 +1,22 @@
+@Library("java") _
+javaPipeline {
+    scmUrl='ssh://git@bitbucket-lan.ah.nl:7999/tt/sam1.git'
+    scmCredentials='f275b9b8-5ff8-40b7-8250-9a16fa14699c'
+    mavenVersion='1.5\n1.6\n1.7\n\1.8'
+    javaVersion= '1.5\n1.6\n1.7\n\1.8'
+    devServer='ahla1062.ah.nl\nahla1063.ah.nl'
+    testServer='ahla1035.ah.nl\nahla1056.ah.nl'
+    accServer='ahla1064.ah.nl\nahla1065.ah.nl\nahla1066.ah.nl\nahla1067.ah.nl'
+    projectPath='project/wcb'
+    mavenOPTS='-Xmx2048M -XX:MaxPermSize=384m'
+    javaOPTS='-Xmx2048M -XX:MaxPermSize=384m'
+    sonarprojectPath='project/wcb/aholdpresentation'
+    sonarHost='https://sonarqube1-ahit-automationcop-tools.openshift.ah.nl'
+    sonarCreds='555d80d1104bc8fff12fc19d0131985f4ae162a1'
+    nexusFile='project/wcb/aholdrelease/target/ahold-release-3.0.43-dist.zip'
+    nexusFolder='project/wcb/aholdrelease/target'
+    nexusType='zip'
+    nexusCreds='0d9e4f34-27d0-4e04-a600-b19deb95c6c3'
+    nexusUrl='nexus-ahit-automationcop-acc.openshift.ah.nl'
+    bType='DeployBuild(WAR)\nFrontend(NPM)\nPluginBuild(JAR)'
+}
