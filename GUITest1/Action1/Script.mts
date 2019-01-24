@@ -1,2 +1,2 @@
-﻿msgbox "hello world"
+﻿'msgbox "hello world"
 print "bye bye"
