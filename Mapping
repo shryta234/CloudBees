@@ -44,5 +44,6 @@ Mappings:
 Resources: 
   myEC2Instance: 
     Type: "AWS::EC2::Instance"
-    Properties: 
+    Properties:
+	  InstanceType : !Ref InstanceType
       ImageId: !FindInMap [RegionMap, !Ref "AWS::Region", !FindInMap [AWSInstanceType2Arch,!Ref 'InstanceType', Arch]]
