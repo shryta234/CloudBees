@@ -17,7 +17,7 @@ Mappings:
     t1.micro:
       Arch: PV64
     t2.nano:
-      Arch: HVM64
+      Arch: PV64
     t2.micro:
       Arch: HVM64
     t2.small:
@@ -34,13 +34,13 @@ Mappings:
       HVMG2: ami-0a7c483d527806435
     ap-northeast-1:
       HVM64: ami-00a5245b4816c38e6
-      PV64: ami-053cdd503598e4a9d
+      PV64: ami-0f9ae750e8274075b
     ap-southeast-1:
       HVM64: ami-08569b978cc4dfa10
       HVMG2: ami-0be9df32ae9f92309
     ap-southeast-2:
       HVM64: ami-03cbaa39
-      HVMG2: ami-0be9df32ae9f92309
+      PV64: ami-02fd0b06f06d93dfc
 Resources: 
   myEC2Instance: 
     Type: "AWS::EC2::Instance"
